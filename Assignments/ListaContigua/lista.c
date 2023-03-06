@@ -5,9 +5,9 @@
 #define TAM_MAX 10
 
 struct Lista{
-    char* vet; //vetor que contÈm os elementos da lista
+    char* vet; //vetor que cont√©m os elementos da lista
     int qtde; //quantidade de elementos efetivos na lista
-    int max_tam; //quantidade m·xima de elementos
+    int max_tam; //quantidade m√°xima de elementos
 };
 
 typedef struct Lista TLista;
@@ -16,7 +16,7 @@ TLista* cria_lista(){
     TLista* list = (TLista *) malloc(sizeof(TLista));
     list->vet = (char *) malloc(sizeof(char)*TAM_MAX);
     //(*list).vet = (char *) malloc(sizeof(char)*TAM_MAX);
-    list->max_tam = TAM_MAX; // tamanho m·ximo da lista
+    list->max_tam = TAM_MAX; // tamanho m√°ximo da lista
     list->qtde = 0; //lista com 0 elementos
     return list;
 }
@@ -81,20 +81,20 @@ int devolver_posicao_conteudo(TLista* lista, char x, int *pos)
             return 1;
         }
     }
-    return 0; // caso n„o encontre, retorna 0
+    return 0; // caso n√£o encontre, retorna 0
 
-    // na situaÁ„o que retorna 0, creio que repete-se a posiÁ„o
+    // na situa√ß√£o que retorna 0, creio que repete-se a posi√ß√£o
     // do devolver anterior
 
 }
 
 int acessar_conteudo_posicao(TLista* lista, int i, char *elem)
 {/** Implementado :) **/
-    if(i < 1 || i > lista->qtde) { // caso i n„o seja v·lido, retorna 0
+    if(i < 1 || i > lista->qtde) { // caso i n√£o seja v√°lido, retorna 0
         return 0;
     }
     else {
-        *elem = lista->vet[i-1]; // coloca o caractere em *elem (i-1 considerando como posiÁ„o e n„o Ìndice)
+        *elem = lista->vet[i-1]; // coloca o caractere em *elem (i-1 considerando como posi√ß√£o e n√£o √≠ndice)
     }
     return 1;
 }
