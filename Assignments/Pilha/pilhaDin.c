@@ -16,7 +16,7 @@ struct Pilha{
 
 TADPilha* cria_pilha(){
 /**
-    Cria a pilha inicializando os dados necessários para o gerenciamento da mesma
+    Cria a pilha inicializando os dados necessÃ¡rios para o gerenciamento da mesma
 **/
     TADPilha *pilha = (TADPilha *) malloc(sizeof(TADPilha));
     pilha->topo = NULL;
@@ -26,7 +26,7 @@ TADPilha* cria_pilha(){
 
 int vazia(TADPilha* pilha){
 /**
-    Retorna "true" se a pilha está vazia, caso contrário, retorna "false"
+    Retorna "true" se a pilha estÃ¡ vazia, caso contrÃ¡rio, retorna "false"
 **/
     if(pilha->qtde == 0) return 1;
     return 0;
@@ -49,7 +49,7 @@ int desempilha(TADPilha* pilha, char *x){
 
 int tamanho(TADPilha* pilha){
 /**
-    Retorna o número de itens da pilha
+    Retorna o nÃºmero de itens da pilha
 **/
     return pilha->qtde;
 }
