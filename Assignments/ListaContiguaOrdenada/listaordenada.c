@@ -6,9 +6,9 @@
 #define TAM_MAX 10
 
 struct Lista{
-    char* vet; //vetor que contÈm os elementos da lista
+    char* vet; //vetor que cont√©m os elementos da lista
     int qtde; //quantidade de elementos efetivos na lista
-    int tam; //quantidade m·xima de elementos
+    int tam; //quantidade m√°xima de elementos
 };
 
 
@@ -17,7 +17,7 @@ typedef struct Lista TLista; /**Tipo exportado**/
 TLista* cria_lista(){
     TLista * lista = (TLista *) malloc(sizeof(TLista));
     lista->vet = (char *) malloc(sizeof(char)*TAM_MAX);
-    lista->tam = TAM_MAX; // tamanho m·ximo da lista
+    lista->tam = TAM_MAX; // tamanho m√°ximo da lista
     lista->qtde = 0; //lista com 0 elementos
     return lista;
 }
@@ -35,7 +35,7 @@ int inserir_ordenado(TLista *lista, char x)
     }
     for(j = lista->qtde-1; j >= i; j--)
     {
-        lista->vet[j+1] = lista->vet[j]; //arrasta os elementos maiores que x uma posiÁ„o a frente
+        lista->vet[j+1] = lista->vet[j]; //arrasta os elementos maiores que x uma posi√ß√£o a frente
     }
 
     lista->vet[i] = x; // insere x
@@ -48,11 +48,11 @@ int remover(TLista *lista, char x)
     int idx, comeco = 0, fim = lista->qtde;
 
     if(lista->qtde < 1) {
-        return 0; // n„o teria o que remover da lista caso fosse menor que 1
+        return 0; // n√£o teria o que remover da lista caso fosse menor que 1
     }
     else {
-        while(comeco <= fim) {          // faz busca bin·ria para encontrar o Ìndice
-            idx = (comeco+fim)/2;       // j· que est· ordenado
+        while(comeco <= fim) {          // faz busca bin√°ria para encontrar o √≠ndice
+            idx = (comeco+fim)/2;       // j√° que est√° ordenado
             if(lista->vet[idx] == x) {
                 break;
             }
@@ -63,11 +63,11 @@ int remover(TLista *lista, char x)
                 fim = idx-1;
             }
         }
-        if(idx > fim || idx < comeco) { // caso n„o encontre x, retorna 0
+        if(idx > fim || idx < comeco) { // caso n√£o encontre x, retorna 0
             return 0;
         }
         int j;
-        for(j=idx; j < lista->qtde; j++){ // organiza o vetor para ocupar o Ìndice de x
+        for(j=idx; j < lista->qtde; j++){ // organiza o vetor para ocupar o √≠ndice de x
             lista->vet[j] = lista->vet[j+1];
         }
         lista->qtde--;
@@ -105,18 +105,18 @@ int devolver_posicao_conteudo(TLista *lista, char x, int *pos)
 
 int acessar_conteudo_posicao(TLista *lista, int i, char *elem)
 {/** Implementado :) **/
-    if(i < 1 || i > lista->qtde) { // caso i n„o seja v·lido, retorna 0
+    if(i < 1 || i > lista->qtde) { // caso i n√£o seja v√°lido, retorna 0
         return 0;
     }
     else {
-        *elem = lista->vet[i-1]; // coloca o caractere em *elem (i-1 considerando como posiÁ„o e n„o Ìndice)
+        *elem = lista->vet[i-1]; // coloca o caractere em *elem (i-1 considerando como posi√ß√£o e n√£o √≠ndice)
     }
     return 1;
 
     /*
-    No main, na situaÁ„o que retorna 0, apresenta o elemento D
-    Creio que seja por ser o valor anterior da vari·vel elemento
-    Mas n„o tenho certeza...
+    No main, na situa√ß√£o que retorna 0, apresenta o elemento D
+    Creio que seja por ser o valor anterior da vari√°vel elemento
+    Mas n√£o tenho certeza...
     */
 }
 
