@@ -8,44 +8,44 @@ int main(){
     vlista = cria_lista();
     printf("\nTamanho da lista: %i",tamanho(vlista));
 
-    printf("\n\nInserção de H: %i", inserir_ordenado(vlista, 'H'));
+    printf("\n\nInserÃ§Ã£o de H: %i", inserir_ordenado(vlista, 'H'));
     imprimir(vlista);
-    printf("\n\nInserção de M: %i", inserir_ordenado(vlista, 'M'));
+    printf("\n\nInserÃ§Ã£o de M: %i", inserir_ordenado(vlista, 'M'));
     printf("\n\nTamanho da lista: %i",tamanho(vlista));
     imprimir(vlista);
-    printf("\n\nInserção de J: %i", inserir_ordenado(vlista, 'J'));
+    printf("\n\nInserÃ§Ã£o de J: %i", inserir_ordenado(vlista, 'J'));
     imprimir(vlista);
-    printf("\n\nInserção de D: %i", inserir_ordenado(vlista, 'D'));
-    imprimir(vlista);
-
-    printf("\n\nRemoção de M: %i", remover(vlista, 'M'));
-    imprimir(vlista);
-    printf("\n\nTamanho da lista: %i",tamanho(vlista));
-
-    printf("\n\nInserção de F: %i", inserir_ordenado(vlista, 'F'));
-    imprimir(vlista);
-    printf("\n\nInserção de Q: %i", inserir_ordenado(vlista, 'Q'));
+    printf("\n\nInserÃ§Ã£o de D: %i", inserir_ordenado(vlista, 'D'));
     imprimir(vlista);
 
-    printf("\n\nRemoção de D: %i", remover(vlista, 'D'));
+    printf("\n\nRemoÃ§Ã£o de M: %i", remover(vlista, 'M'));
     imprimir(vlista);
     printf("\n\nTamanho da lista: %i",tamanho(vlista));
 
-    printf("\n\nInserção de O: %i", inserir_ordenado(vlista, 'O'));
+    printf("\n\nInserÃ§Ã£o de F: %i", inserir_ordenado(vlista, 'F'));
     imprimir(vlista);
-    printf("\n\nInserção de B: %i", inserir_ordenado(vlista, 'B'));
+    printf("\n\nInserÃ§Ã£o de Q: %i", inserir_ordenado(vlista, 'Q'));
+    imprimir(vlista);
+
+    printf("\n\nRemoÃ§Ã£o de D: %i", remover(vlista, 'D'));
+    imprimir(vlista);
+    printf("\n\nTamanho da lista: %i",tamanho(vlista));
+
+    printf("\n\nInserÃ§Ã£o de O: %i", inserir_ordenado(vlista, 'O'));
+    imprimir(vlista);
+    printf("\n\nInserÃ§Ã£o de B: %i", inserir_ordenado(vlista, 'B'));
     imprimir(vlista);
 
     char elemento;
-    printf("\n\nAcesso da 1ª pos retorno: %i - elemento: ", acessar_conteudo(vlista, 1, &elemento));
+    printf("\n\nAcesso da 1Âª pos retorno: %i - elemento: ", acessar_conteudo(vlista, 1, &elemento));
     printf(" %c", elemento);
-    printf("\n\nAcesso da 3ª pos retorno: %i - elemento: ", acessar_conteudo(vlista, 3, &elemento));
+    printf("\n\nAcesso da 3Âª pos retorno: %i - elemento: ", acessar_conteudo(vlista, 3, &elemento));
     printf(" %c", elemento);
-    printf("\n\nAcesso da 8ª pos retorno: %i - elemento: ", acessar_conteudo(vlista, 8, &elemento));
+    printf("\n\nAcesso da 8Âª pos retorno: %i - elemento: ", acessar_conteudo(vlista, 8, &elemento));
     printf(" %c", elemento);
-    printf("\n\nAcesso da 2ª pos retorno: %i - elemento: ", acessar_conteudo(vlista, 2, &elemento));
+    printf("\n\nAcesso da 2Âª pos retorno: %i - elemento: ", acessar_conteudo(vlista, 2, &elemento));
     printf(" %c", elemento);
-    printf("\n\nAcesso da 5ª pos retorno: %i - elemento: ", acessar_conteudo(vlista, 5, &elemento));
+    printf("\n\nAcesso da 5Âª pos retorno: %i - elemento: ", acessar_conteudo(vlista, 5, &elemento));
     printf(" %c", elemento);
     imprimir(vlista);
 
